@@ -4,5 +4,6 @@ export const init = new Command()
     .name('init')
     .description('Initialize a new project')
     .action(async () => {
-        console.log('Initializing a new project...');
+        const result = Math.floor(Math.random() * 100 + 1);
+        console.log(result);
     });
