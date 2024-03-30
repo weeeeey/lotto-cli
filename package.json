@@ -10,6 +10,8 @@
     "scripts": {
         "start": "node index.js",
         "build": "rm -rf dist && npx tsc",
+        "build:chmod": "npm run build && npm run chmod",
+        "chmod": "chmod +x dist/index.js",
         "dev": "node ./dist/index.js"
     },
     "keywords": [],
